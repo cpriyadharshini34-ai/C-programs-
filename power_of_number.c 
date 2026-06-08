@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int main()
+{
+    int base, power, i;
+    long long result = 1;
+
+    printf("Enter base and power: ");
+    scanf("%d%d", &base, &power);
+
+    for(i = 1; i <= power; i++)
+    {
+        result *= base;
+    }
+
+    printf("Result = %lld", result);
+
+    return 0;
+}
